@@ -150,7 +150,6 @@ server.post("/signup", async (req, res) => {
       .status(400)
       .json({ error: "Full name must be at least 3 letters long." });
   }
-
   if (!email.length) {
     return res.status(400).json({ error: "Email is required." });
   }
